@@ -12,7 +12,7 @@ namespace Test
 {
     static public class MyRealm
     {
-        public static Task<Realm> GetInstanceAsync() => Realm.GetInstanceAsync(GetConfig());
+        static public Task<Realm> GetInstanceAsync() => Realm.GetInstanceAsync(GetConfig());
         static public SyncConfiguration GetConfig(User user = null) => new SyncConfiguration(user ?? User.Current, RealmUri);
         static public async Task<Realm> OpenRealm(bool createUser = false)
         {
