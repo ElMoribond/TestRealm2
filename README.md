@@ -10,4 +10,5 @@ To create the user 2 possibilities
 - automatically by modifying createUser to true in the Counter.cs file and then run once before setting false.
 
 I'm having trouble when I want to use the same realm from the UI and service.
+
 What surprises me most is that it worked 3 times during my tests (see Success.png).
